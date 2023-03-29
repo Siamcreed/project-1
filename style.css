@@ -1,0 +1,23 @@
+.div-containe {
+ width: 300px;
+ margin: 0 auto;
+ align-items: center;
+}
+
+.table {
+    display: flex;
+}
+
+.tab {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    background-color: black;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    line-height: 100px;
+    font-size: medium;
+    cursor: pointer;
+}
+
