@@ -1,7 +1,11 @@
+// I am declaring the tabs class that with a queryselector. The '.tab' is already classed in the HTML.
 const tabs = document.querySelectorAll('.tab')
+// The first player will be the 'X' in the game so I have to tell Java script that.
 let player1 = 'X';
 let gameOver = false;
 
+// To use the tabs on the I had to addevent listens so it will only work if the tabs are clicked.
+// This also has a bit of the winning conditions and it will print when one of the players wins.
 tabs.forEach(tab => {
     tab.addEventListener('click', () =>{
         if (gameOver || tab.textContent !== '') {
@@ -24,7 +28,7 @@ tabs.forEach(tab => {
         player1 = player1==='X'?'O':'X';
     });
 });
-
+// These are the win conditions so it knows what the conditions are for a player to win. The fucntion is checkWin is always monitoring the game for specific patterns.
 function checkWin() {
     const winConditions = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], // rows
