@@ -22,19 +22,37 @@
     margin-bottom: 1px;
     text-align: center;
     line-height: 100px;
-    font-size: medium;
+    font-size: 100px;
     cursor: pointer;
     border-radius: 10px;
 
+
 }
 
-header {
+h1 {
     font-size: 50px;
     text-align: center;
-    color: white;
+    color: orange;
     margin-bottom: 100px;
 }
 
 body{
     background-color: blueviolet;
+    font-family: 'Finger Paint', cursive;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: forestgreen;
+    border-color: orange;
+    font-family: 'Finger Paint', cursive;
+    color: goldenrod;
+   
+}
+
+.Reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }

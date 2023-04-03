@@ -1,8 +1,11 @@
 // I am declaring the tabs class that with a queryselector. The '.tab' is already classed in the HTML.
-const tabs = document.querySelectorAll('.tab')
+let tabs = document.querySelectorAll('.tab')
 // The first player will be the 'X' in the game so I have to tell Java script that.
 let player1 = 'X';
 let gameOver = false;
+let restartBtn  = document.getElementById('restartBtn');
+let spaces = Array(9).fill(null);
+let playerText = document.getElementById('PlayerText');
 
 // To use the tabs on the I had to addevent listens so it will only work if the tabs are clicked.
 // This also has a bit of the winning conditions and it will print when one of the players wins.
@@ -14,7 +17,7 @@ tabs.forEach(tab => {
         tab.textContent = player1;
 
         if(checkWin()) {
-            alert(`${player1} wins!`);
+            playerText.innerHTML = (`${player1} wins!`);
             gameOver = true;
             return;
         }
@@ -49,4 +52,20 @@ function checkTie() {
     return Array.from(tabs).every(tab=> {
         return tab.textContent!=='';
     });
+}
+
+
+restartBtn.addEventListener('click', restart)
+
+
+function restart() {
+    spaces.fill(null)
+
+    tabs.forEach( tab => {
+        tab.innerText = ''
+        tab.style.backgroundColor=''  
+    })
+
+    playerText.innerHTML = 'Tic Tac Toe'
+    
 }
