@@ -15,7 +15,7 @@ tabs.forEach(tab => {
             return;
         }
         tab.textContent = player1;
-
+// These are the winning quote
         if(checkWin()) {
             playerText.innerHTML = (`${player1} wins!`);
             gameOver = true;
@@ -29,6 +29,7 @@ tabs.forEach(tab => {
         }
 
         player1 = player1==='X'?'O':'X';
+        // This is to make sure it switches between 'X' and 'O'.
     });
 });
 // These are the win conditions so it knows what the conditions are for a player to win. The fucntion is checkWin is always monitoring the game for specific patterns.
@@ -54,13 +55,13 @@ function checkTie() {
     });
 }
 
-
+// This is the restart button it will reset everything when clicked.
 restartBtn.addEventListener('click', restart)
-
+// I am setting up the functions that will go in the button
 
 function restart() {
     spaces.fill(null)
-
+// This null part is to remove any items within the tabs.
     tabs.forEach( tab => {
         tab.innerText = ''
         tab.style.backgroundColor=''  
