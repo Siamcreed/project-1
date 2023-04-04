@@ -54,3 +54,30 @@ As a user I expect to be able to play with my friend.
 As a user I expect to be notified if I win of the opponent wins.
 As a user I expect to be to be able to retry after a win or loss.
 As a user I expect my score and opponent score to be recorded.
+
+
+# Challenges 
+I had a lot of challenges adding the retry button 
+
+function restart() {
+    spaces.fill(null)
+// This null part is to remove any items within the tabs.
+    tabs.forEach( tab => {
+        tab.innerText = ''
+        tab.style.backgroundColor=''  
+    })
+
+    playerText.innerHTML = 'Tic Tac Toe'
+    
+}
+
+# Wins
+The code works and the game does the basic things.
+
+# Improvements
+-Score boards 
+-Better styling
+-Better retry button
+
+# Bugs
+The retry button only works if no one has won. And it doesn't reset the turn.
