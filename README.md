@@ -71,6 +71,22 @@ function restart() {
     
 }
 
+# Build process
+First things first: I wanted to implement the holy grail layout and practise utilising Flexbox with very basic content because I was less confident in that area.
+In order to have a visual foundation to build upon, I created the fundamental board layout utilising a Grid framework.
+To keep track of many pieces of information without creating numerous distinct variables and to practise using modular imports, I created classes for players and the game itself (Scoreboard).
+Mild diversion I spent the evening designing and making my own floral typeface because I wanted my game to have distinctive icons.
+I focused my efforts on the game.js file while importing more helpful classes and functions. 
+In order to continue with the MVP game logic without spending too much effort on player optimisation, I automatically allocated players 1 and 2 to the game.
+In order to continue without having to deal with the game outcome logic, I first built code to ensure that player 1 wins every time.
+I used class="empty" to make it possible to just click on empty squares. This helped me later since I could apply hover effects to squares that were only empty.
+I allowed myself plenty of time to work through the game outcome logic because it was frustrating other players more on challenges below! After completing the MVP requirements, I added a retry button.
+I validated my code using a number of validators to look for problems that I hadn't found throughout my own testing.
+HTML: learned that some tags automatically close, that h1 should only occur once per page, and that modular JavaScript automatically defers.
+CSS: Fixed a unit shortage in the grid-template layout.
+Accessibility: I utilised buttons instead of labels for the game squares so that screen readers could distinguish between the buttons.
+
+
 # Wins
 The code works and the game does the basic things.
 
