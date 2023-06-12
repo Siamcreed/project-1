@@ -6,13 +6,13 @@ This project is a small game you can play with your friends or yourself. The pro
 
 # Deployment link:
 
-https://pages.git.generalassemb.ly/siamcreed/Project-1-tic-tac-toe/
+https://siamcreed.github.io/project-1/
 
 I deployed the project on GITHUB and login information isn't required as the project repo is public.
 
 # Acess the code
 To access the code go to the link below where you can access the files and you can clone the repo and look at the code. To see the HTML code it is name index.html. The css is the style.css and the javascript is the script.js.
-https://git.generalassemb.ly/siamcreed/Project-1-tic-tac-toe
+https://github.com/Siamcreed/project-1
 
 
 # Timeframe and working team
