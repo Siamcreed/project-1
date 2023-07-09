@@ -50,13 +50,15 @@ Having code that is properly structured and commented
 
 
 # User stories
+
 As a user I expect to be able to join and play immediately.
 As a user I expect to be able to play with my friend.
 As a user I expect to be notified if I win or the opponent wins.
 As a user I expect to be able to retry after a win or loss.
 As a user I expect my score and opponent score to be recorded.
 
-#Build 
+# Build
+ 
 First things first: I wanted to implement the holy grail layout and practise utilising Flexbox with very basic content because I was less confident in that area. In order to have a visual foundation to build upon, I created the fundamental board layout utilising a Grid framework. 
 
 To keep track of many pieces of information without creating numerous distinct variables and to practise using modular imports, I created classes for players and the game itself (Scoreboard). Mild diversion, I spent the evening designing and making my own floral typeface because I wanted my game to have distinctive icons. I focused my efforts on the game.js file while importing more helpful classes and functions. 
@@ -69,6 +71,7 @@ Accessibility: I utilised buttons instead of labels for the game squares so that
 
 
 # Challenges 
+
 I had a lot of challenges adding the retry button because I found it difficult to reset the game and it played like usual after that. I did eventually add it but it had some bugs and it cleared the board instead of resetting the game.
 
 function restart() {
